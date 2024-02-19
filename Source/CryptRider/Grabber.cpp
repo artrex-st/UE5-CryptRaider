@@ -18,9 +18,7 @@ UGrabber::UGrabber()
 void UGrabber::BeginPlay()
 {
 	Super::BeginPlay();
-
-	// ...
-	
+	// ...	
 }
 
 
@@ -28,10 +26,22 @@ void UGrabber::BeginPlay()
 void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+	FVector Start = GetComponentLocation();
+	FVector End = Start + GetForwardVector() * MaxGrabDistance;
 
-	FRotator rotation = GetComponentRotation();
-	FString RotationString = rotation.ToCompactString();
-	UE_LOG(LogTemp, Display, TEXT("Rotation do Grabber: %s"), *RotationString)
-	// ...
+	DrawDebugLine(GetWorld(), Start, End, FColor::Red);
+
+	FCollisionShape Sphere = FCollisionShape::MakeSphere(GrabRadius);
+
+	FHitResult HitResult;
+
+	if (GetWorld()->SweepSingleByChannel(HitResult, Start,End, FQuat::Identity, ECC_GameTraceChannel2, Sphere))
+	{
+		UE_LOG(LogTemp, Display, TEXT("Object Hit: %s"), *HitResult.GetActor()->GetActorLabel());
+	}
+	else
+	{
+		UE_LOG(LogTemp, Display, TEXT("No Object hit."));
+	}
 }
 
