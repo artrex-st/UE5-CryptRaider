@@ -26,11 +26,25 @@ void UGrabber::BeginPlay()
 void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+}
+
+void UGrabber::Grab()
+{
+	UE_LOG(LogTemp, Display, TEXT("Start grabber!"));
 	FVector Start = GetComponentLocation();
 	FVector End = Start + GetForwardVector() * MaxGrabDistance;
 
+	TryGrab(Start, End);
 	DrawDebugLine(GetWorld(), Start, End, FColor::Red);
+}
 
+void UGrabber::Release()
+{
+	UE_LOG(LogTemp, Display, TEXT("Released grabber!"));
+}
+
+void UGrabber::TryGrab(FVector Start, FVector End)
+{
 	FCollisionShape Sphere = FCollisionShape::MakeSphere(GrabRadius);
 
 	FHitResult HitResult;
@@ -41,7 +55,7 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	}
 	else
 	{
-		UE_LOG(LogTemp, Display, TEXT("No Object hit."));
+		UE_LOG(LogTemp, Display, TEXT("No object Hit"));
 	}
 }
 

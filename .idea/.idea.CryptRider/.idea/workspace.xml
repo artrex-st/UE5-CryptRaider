@@ -11,7 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a989a56c-a41d-460d-9345-3db065df14e9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CryptRider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CryptRider/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BP_PlayerCryptRider.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_PlayerCryptRider.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Scenes/MyDungeon.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/MyDungeon.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CryptRider/Grabber.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CryptRider/Grabber.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CryptRider/Grabber.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CryptRider/Grabber.h" afterDir="false" />
     </list>
@@ -166,7 +168,8 @@
       <workItem from="1708391633353" duration="425000" />
       <workItem from="1708392695639" duration="399000" />
       <workItem from="1708393530248" duration="1307000" />
-      <workItem from="1708397229549" duration="2491000" />
+      <workItem from="1708397229549" duration="3762000" />
+      <workItem from="1708449448616" duration="1591000" />
     </task>
     <servers />
   </component>
