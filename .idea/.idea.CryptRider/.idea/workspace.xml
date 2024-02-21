@@ -11,8 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a989a56c-a41d-460d-9345-3db065df14e9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CryptRider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CryptRider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CryptRider/Grabber.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CryptRider/Grabber.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/CryptRider/Grabber.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CryptRider/Grabber.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Scenes/MyDungeon.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/MyDungeon.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CryptRider/TriggerComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CryptRider/TriggerComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CryptRider/TriggerComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CryptRider/TriggerComponent.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +168,8 @@
       <workItem from="1708393530248" duration="1307000" />
       <workItem from="1708397229549" duration="3762000" />
       <workItem from="1708449448616" duration="5911000" />
+      <workItem from="1708526813086" duration="2736000" />
+      <workItem from="1708532821111" duration="334000" />
     </task>
     <servers />
   </component>
