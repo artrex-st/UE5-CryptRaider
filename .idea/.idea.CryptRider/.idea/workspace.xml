@@ -11,7 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a989a56c-a41d-460d-9345-3db065df14e9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CryptRider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CryptRider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_SecretWall.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_SecretWall.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Scenes/MyDungeon.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Scenes/MyDungeon.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CryptRider/Mover.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CryptRider/Mover.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/CryptRider/Mover.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CryptRider/Mover.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CryptRider/TriggerComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CryptRider/TriggerComponent.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/CryptRider/TriggerComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/CryptRider/TriggerComponent.h" afterDir="false" />
     </list>
@@ -188,7 +191,7 @@
       <workItem from="1708558901012" duration="1321000" />
       <workItem from="1708625954566" duration="4410000" />
       <workItem from="1708714960624" duration="2475000" />
-      <workItem from="1708745027421" duration="2283000" />
+      <workItem from="1708745027421" duration="4632000" />
     </task>
     <servers />
   </component>

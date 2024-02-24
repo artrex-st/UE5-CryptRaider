@@ -16,9 +16,13 @@ void UTriggerComponent::BeginPlay()
 void UTriggerComponent::TickComponent(float DeltaTime, ELevelTick TickType,	FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-	GetAcceptableActor();
+	Mover->SetShouldMove(GetAcceptableActor() != nullptr);
 }
 
+void UTriggerComponent::SetMover(UMover* NewMover)
+{
+	Mover = NewMover;
+}
 
 AActor* UTriggerComponent::GetAcceptableActor() const
 {
@@ -29,6 +33,7 @@ AActor* UTriggerComponent::GetAcceptableActor() const
 	{
 		if (Actor->ActorHasTag(AcceptableActorTag))
 		{
+			UE_LOG(LogTemp, Display, TEXT("Tag OK"));
 			return Actor;
 		}
 	}
