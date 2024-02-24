@@ -26,6 +26,8 @@ public:
 private:
 	UPROPERTY(EditAnywhere)
 	FName AcceptableActorTag = "Unlock1";
+	UPROPERTY(EditAnywhere)
+	FName DenyActorTag = "Grabbed";
 	UMover* Mover;
 
 	AActor* GetAcceptableActor() const;
