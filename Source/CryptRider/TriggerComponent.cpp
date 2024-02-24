@@ -16,7 +16,19 @@ void UTriggerComponent::BeginPlay()
 void UTriggerComponent::TickComponent(float DeltaTime, ELevelTick TickType,	FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-	Mover->SetShouldMove(GetAcceptableActor() != nullptr);
+	AActor* Actor = GetAcceptableActor();
+	if (Actor != nullptr)
+	{
+		UPrimitiveComponent* Component = Cast<UPrimitiveComponent>(Actor->GetRootComponent());
+
+		if (Component != nullptr)
+		{
+			Component->SetSimulatePhysics(false);
+		}
+
+		Actor->AttachToComponent(this, FAttachmentTransformRules::KeepWorldTransform);
+		Mover->SetShouldMove(true);
+	}
 }
 
 void UTriggerComponent::SetMover(UMover* NewMover)
@@ -33,7 +45,6 @@ AActor* UTriggerComponent::GetAcceptableActor() const
 	{
 		if (Actor->ActorHasTag(AcceptableActorTag))
 		{
-			UE_LOG(LogTemp, Display, TEXT("Tag OK"));
 			return Actor;
 		}
 	}
