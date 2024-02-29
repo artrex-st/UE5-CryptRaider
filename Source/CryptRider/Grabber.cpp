@@ -50,7 +50,7 @@ void UGrabber::Grab()
 
 	if (GetGrabbableInReach(HitResult))
 	{
-		DrawDebugSphere(GetWorld(), HitResult.ImpactPoint, 10, 10, FColor::Red, false, 5);
+		DrawDebugSphere(GetWorld(), HitResult.ImpactPoint, 10, 10, FColor::Green, false, 5);
 		
 		UPrimitiveComponent* HitComponent = HitResult.GetComponent();
 		HitComponent->WakeAllRigidBodies();
@@ -61,7 +61,11 @@ void UGrabber::Grab()
 			HitResult.ImpactPoint,
 			GetComponentRotation()
 			);
-		HitResult.GetActor()->Tags.Add("Grabbed");
+		AActor* Actor = HitResult.GetActor();
+		Actor->Tags.Add("Grabbed");
+		Actor->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
+		UPrimitiveComponent* Primitive = Cast<UPrimitiveComponent>(Actor->GetRootComponent());
+		Primitive->SetSimulatePhysics(true);
 	}
 }
 

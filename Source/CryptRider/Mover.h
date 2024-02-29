@@ -28,7 +28,7 @@ public:
 private:
 	UPROPERTY(EditAnywhere)
 	float MoveTime = 4;
-	bool IsMoving = false;
+	bool NeedMove = false;
 	UPROPERTY(EditAnywhere)
 	FVector MoveOffset = FVector(0,0,-600);
 	FVector StartLocation;

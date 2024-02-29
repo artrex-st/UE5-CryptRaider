@@ -28,6 +28,9 @@ void UTriggerComponent::TickComponent(float DeltaTime, ELevelTick TickType,	FAct
 
 		Actor->AttachToComponent(this, FAttachmentTransformRules::KeepWorldTransform);
 		Mover->SetShouldMove(true);
+	}else
+	{
+		Mover->SetShouldMove(false);
 	}
 }
 
